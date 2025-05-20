@@ -1,0 +1,528 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #827f76;
+}
+body {
+  font-family: "Bellota Text", cursive;
+}
+.section-bg-affect:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.story-section .timeline-card::before {
+  border-color: #ff6187;
+}
+.story-section .timeline .title::before {
+  border-color: #ff6187;
+}
+.story-section .timeline-1 li {
+  border-left-color: #d3c4a1;
+}
+.story-section .timeline-1 li:before {
+  border-color: #cbb788;
+  box-shadow: 3px 3px 0px #d3c4a1;
+}
+.donate-section .donate-box .donate-card {
+  width: 100%;
+  border: 1px dashed #ff6187;
+}
+.donate-section .donate-box .donate-card p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.donate-section .donate-box .donate-card .qr-code-image {
+  max-width: 150px;
+  display: block;
+}
+.donate-modal {
+  display: none; 
+  position: fixed;
+  z-index: 199;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0)!important;
+  background-color: rgba(0,0,0,0.5)!important;
+}
+.donate-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 750px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetopfordonatemodal;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetopfordonatemodal;
+  animation-duration: 0.4s
+}
+@-webkit-keyframes animatetopfordonatemodal {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetopfordonatemodal {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.donate-modal strong, .donate-modal h3{font-family:inherit!important;}
+.donate-modal-close {color: red;font-size: 28px;font-weight: bold;text-decoration: none;cursor: pointer;position: absolute;right: 15px;z-index: 999;}
+.donate-modal-header {padding: 8px 16px;background-color: #f23b43;color: #fff;font-size:30px;text-align:center;line-height: 40px;}
+.donate-modal-header strong{display:flex;align-items:center;justify-content: center;flex-wrap: wrap;color:#fff;}
+
+.donate-modal-header strong span{margin-left:10px;}
+.donate-modal-body {padding: 0 15px;}
+/* .donate-box{display: flex;justify-content: space-evenly;flex-wrap: wrap;} */
+.donate-box .donate-card:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.donate-box .donate-card h3{padding:0;margin:0;margin-bottom: 20px;font-weight: bold;font-size: 18px;line-height: 30px;}
+.donate-box .donate-card p {margin: 10px 0!important;font-size: 16px;}
+.donate-box .donate-card p:last-child {margin-bottom:0!important;}
+@media (max-width: 699px) {
+.donate-box .donate-card{width:100%;}
+.donate-wrap{
+  width: 100%;
+}
+.qr-code-image {
+  max-width: 200px;
+}
+}
+.donate-box .donate-card {position:relative;}
+.donate-box .donate-card .qr-code-image{max-width: 150px;border: 1px solid #ccc;padding: 3px;margin: auto;display: block;}
+.donate-box .cryptos-box .cryptos-items {display: flex;flex-wrap: wrap;justify-content: center;margin-right: -10px;margin-left: -10px;margin-top: 10px;}
+.donate-box .cryptos-box .cryptos-items .crypto-item {padding:10px 10px 0;}
+.donate-box .cryptos-box .cryptos-items .crypto-item img {width:30px;max-width:100%;min-width:35px;cursor:pointer;}
+.donate-box .cryptos-box-view {display:none;position: absolute;top: 0;left: 0;background: #ffffff;width: 100%;height: 100%;border-radius: 7px;padding:10px;text-align: center;}
+.donate-box .cryptos-box-view h5 {font-weight: bold;font-size: 18px;display: flex;align-items: center;justify-content: center;margin-bottom: 15px;}
+.donate-box .cryptos-box-view h5 img{width:25px;}
+.donate-box .cryptos-box-view h5 .coin-img {margin-right: 5px;}
+.donate-box .cryptos-box-view h5 .coin-id {margin-left: 5px;}
+.donate-box .cryptos-box-view .coin-address {display: block;padding: 10px;background: #ffe2e4;margin-bottom: 15px;word-break: break-word;color: #201f1f;}
+.donate-box .cryptos-box-view .cryptos-box-view-close {margin-top: 15px;background: #f23b43;color: #fff;padding: 5px 15px;border-radius: 5px;border: 1px solid #e3252d;}
+.donate-box .cryptos-box-view .cryptos-box-view-close:hover{background: #e3252d;}
+
+header .navbar-brand {
+  font-size: 20px;
+}
+.offcanvas-menu li {
+  position: relative;
+}
+.offcanvas-menu li:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #ff6187;
+}
+.offcanvas-menu .nav-link {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.section-title {
+  font-family: 'Bonheur Royale', cursive;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  color: #ff6187;
+}
+.section-sub-title {
+  font-family: "Bellota Text", cursive;
+}
+.title {
+  font-family: "Bellota Text", cursive;
+  font-size: 1.4rem;
+}
+.sub-title {
+  font-family: "Bellota Text", cursive;
+  font-size: 1rem;
+}
+.wrapper {
+}
+/* Banner Section */
+.main_area {
+  position: relative;
+  text-align: center;
+}
+.main_image_area {
+  /* position: relative; */
+}
+.main_image_area .bg-title {
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+}
+.main_image_area .wrap-name {
+  text-align: left;
+  font-size: 22px;
+}
+.main_area .day_wrapper {
+  width: 100%;
+  z-index: 1;
+}
+.main_area .day_area p {
+  color: #3d3d3d;
+}
+.main_area .day_area .wrap-text p {
+  color: #ff6187;
+  font-size: 70px;
+  line-height: 1;
+}
+.main_area .day_area .wrap-text p:first-child{
+  border-bottom: 1px solid;
+}
+.main_area .day_area .day_area_inner {
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+.main_area .day_area_inner > span {
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 30px;
+  height: 30px;
+}
+.main_area .wedding_area {
+  color: #ff6187;
+  font-size: 1.6em;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+.main_image {
+  overflow: hidden;
+}
+.main_area .wedding_area {
+  font-size: 2.2em;
+}
+.accessibilities-section a {
+  border-color: #ff6187;
+  background: #ff6187;
+}
+.accessibilities-section .content-button {
+  font-size: 14px;
+}
+
+/* video-section */
+.video-section iframe {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* gallery-section */
+#btn-see-more-gallery{
+  border-radius: 50px;
+  padding: 12px 24px;
+}
+.gallery-section .btn-secondary.btn-see-more-gallery {
+  background: #ff6187;
+  border-color: #ff6187;
+}
+.lg-backdrop, .lg-outer{
+  z-index: 9999999;
+}
+.gallery-item {
+  cursor: pointer;
+}
+
+/* weddingdate-section */
+.weddingdate-section .mini_calendar .calendar-month,
+.weddingdate-section .mini_calendar table th {
+  color: #ff6187;
+}
+.mini_calendar > .mini_calendar{
+  border-bottom: 1px solid #2a2a2d;
+  padding-bottom: 20px;
+}
+.weddingdate-section .mini_calendar table tr:nth-child(2) td {
+  padding: 0;
+  height: 40px;
+}
+.weddingdate-section #clock > div {
+  color: #ff6187;
+}
+.main_dday_wrapper .main_dday_icon {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main_dday_wrapper .main_dday_text {
+  position: absolute;
+  top: 42px;
+  left: 52%;
+  font-size: 1.5em;
+}
+.weddingdate-section .mini_calendar td {
+  color: #808080;
+}
+.weddingdate-section .mini_calendar td #today {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  padding: 5px;
+  background-color: #ff6187;
+  color: #fff;
+  border-radius: 50%;
+}
+/* story-section */
+.story-section .timeline .title {
+  color: #ff6187;
+}
+.timeline-card .img-holder {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.invitation-couple {
+  color: #ff6187;
+}
+.invitation-section {
+  color: #000;
+}
+.invitation-section .invitation-place {
+  line-height: 2rem;
+}
+.invitation-section .invation-title h3 {
+  font-size: 2.7rem;
+  color: #ff6187;
+}
+.invitation-section .invation-title p {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.invitation-section .couple-img {
+  overflow: hidden;
+}
+.invitation-section .invitation-content {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+.invitation-section .invitation-parent {
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.invitation-section .invitation-couple p {
+  color: #949494;
+}
+.invitation-section .invitation-couple span {
+  font-size: 40px;
+  line-height: 45px;
+  color: #000;
+}
+.invitation-section .invitation-couple i {
+  font-size: 20px;
+  color: #fff;
+}
+.invitation-section .invitation-common-wrapper p {
+  font-size: 2rem;
+}
+.invitation-section .invitation-common-wrapper {
+  background-color: #fff;
+}
+/* event-section */
+.event-section a {
+  background: #ff6187;
+  border-color: #ff6187;
+  font-size: 14px;
+}
+.event-section .event-item {
+  background-color: #f2f2f2;
+}
+/* couple-section */
+.couple-section .wrap-people {
+  overflow: hidden;
+  gap: 25px;
+  justify-content: space-between;
+}
+.couple-section .wrap-people .member {
+  margin: 0 auto;
+}
+@media screen and (max-width: 450px){
+  .couple-section .wrap-people .member {
+    width: 100%!important;
+  }
+  .couple-section .wrap-people{
+    flex-direction: column;
+  }
+}
+.couple-section .wrap-people .member img {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 50%;
+}
+.couple-section .wrap-people .member-name {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.couple-section .wrap-people .member-contact {
+  justify-content: center;
+  gap: 10px;
+}
+.couple-section .wrap-people .member-contact li {
+  line-height: 20px;
+  align-self: center;
+}
+.couple-section .member-contact li a {
+  font-size: 20px;
+  display: inline-block;
+}
+.parent{
+  font-size: 16px;
+  font-family: "Bellota Text", cursive;
+}
+.parent-name > span {
+  font-weight: bold;
+}
+/* people-section */
+.people-section .rounded-circle {
+  overflow: hidden;
+}
+.people-section a,
+.couple-section a {
+  color: #212529;
+  display: inline-block;
+}
+
+/* wishes-section */
+.wish-box {
+  border-color: #ff6187;
+}
+.wishes-section button {
+  font-size: 14px;
+  background: #ff6187;
+  border-color: #ff6187;
+}
+
+/* footer-section */
+.footer-section .title {
+  font-size: 2.6rem;
+  color: #ff6187;
+}
+
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .main_area .wedding_area {
+    font-size: 1.5rem;
+  }
+  .main_area .wedding_area img {
+    display: block;
+    margin: 0 auto;
+  }
+  .invitation-section .invitation-content {
+    width: 90%;
+  }
+  .invitation-section .invitation-couple span {
+    font-size: 27px;
+    line-height: 45px;
+  }
+  .invitation-section .invitation-common-wrapper {
+    margin: 0 10px;
+    color: #000;
+  }
+  .invitation-section h3 {
+    background-size: contain;
+  }
+  .footer-section .title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 414px) {
+  .main_image_area .bg-title {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
+  .main_image_area .wrap-name {
+    font-size: 18px;
+  }
+  .invitation-section .invitation-common-wrapper p {
+    font-size: 22px;
+  }
+}
+/*new form*/
+#wish-form {
+  background-color: #D8D8D8;
+}
+#show-comments {
+  background-color: #D8D8D8;
+}
+.box-comment {
+  border-bottom: 1px dashed black;
+}
+button#btn-submit-comment {
+  background-color: #ff6187;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+button#btn-submit-comment:hover {
+  background-color: #848484;
+}
+#show-comments::-webkit-scrollbar {
+  width: 8px;
+ 
+}
+#show-comments::-webkit-scrollbar-thumb {
+  background-color:#5C636A;
+}
+
+.comment-confirm {
+  font-size: 12px;
+}
+
+.accessibilities-section .content-button {
+    font-size: 14px;
+}
+
+.avatar-groom-bride {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.mx-2 {
+    margin-right: .5rem !important;
+    margin-left: .5rem !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.pt-3 {
+    padding-top: 1rem !important;
+}
+.mt-3 {
+    margin-top: 1rem !important;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+
+.bride-story, .groom-story
+{
+  color: #212529;
+}
