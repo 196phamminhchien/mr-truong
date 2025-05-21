@@ -828,12 +828,8 @@
     </script>
 
     <script language="JavaScript">
-        document.addEventListener('DOMContentLoaded', () => {
-            const audio = document.getElementById('mcard_bgm');
-            audio.play().catch(error => {
-                console.error('Autoplay failed:', error);
-            });
-        });
+        const bgm = $('#mcard_bgm').get(0);
+        bgm.play();
 
         var today = new Date("2025-06-01");
         var theYear = getY2KYear(today), theMonth = today.getMonth();

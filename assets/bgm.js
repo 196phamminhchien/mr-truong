@@ -6,10 +6,10 @@ $(function () {
     $('#bgm_pp_btn').on('click', function () {
         const bgm = $('#mcard_bgm').get(0);
         const bgmPanel = $('#bgm');
-        const isPaused = bgm.paused;
+        const isPlay = bgm.play;
 
         if (parseInt(bgmPanel.css('left')) < 0) {
-            if (!isPaused) {
+            if (isPlay) {
                 stopMusic(this, bgm);
             } else {
                 playMusic(this, bgmPanel, bgm);
