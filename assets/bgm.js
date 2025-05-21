@@ -1,9 +1,9 @@
-$(function() {
+$(function () {
     let firstTouch = true;
 
     $('#bgm').on('click', (e) => e.target !== e.currentTarget);
 
-    $('#bgm_pp_btn').on('click', function() {
+    $('#bgm_pp_btn').on('click', function () {
         const bgm = $('#mcard_bgm').get(0);
         const bgmPanel = $('#bgm');
         const isPaused = bgm.paused;
@@ -26,7 +26,7 @@ $(function() {
 
     setInterval(bgm_prog_update, 100);
 
-    $('body').on('click touchstart', function() {
+    $('body').on('click touchstart', function () {
         if (firstTouch && !$('#bgm_pp_btn').hasClass('bgm_pp_btn_play')) {
             $('#bgm_pp_btn').click();
             firstTouch = false;
@@ -48,7 +48,7 @@ function stopMusic(button, bgm) {
 
 function nextSong() {
     let sseq = 0, sseq_max = 0;
-    $('song').each(function() {
+    $('song').each(function () {
         const songSrc = $(this).attr('src');
         sseq_max = $(this).data('sseq');
         if ($('#mcard_bgm').get(0).currentSrc === encodeURI(songSrc)) {
@@ -58,10 +58,10 @@ function nextSong() {
 
     const sseq_next = sseq + 1 > sseq_max ? 1 : sseq + 1;
     const bgm_next = $('song[data-sseq=' + sseq_next + ']');
-    
+
     $('#bgm_now_song').text(bgm_next.data('song'));
     $('#bgm_now_arti').text(bgm_next.data('arti'));
-    
+
     const bgm = $('#mcard_bgm').get(0);
     $('#mcard_bgm > source').attr('src', bgm_next.attr('src'));
     bgm.load();
